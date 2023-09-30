@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Senha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <main>
+        <h1>VOU VER SE A TUA SENHA PRESTA</h1>
+        <H4>ESCREVE ESSA MERDA AI</H4>
+        <input id = "senha" type="password">
+        <button onclick = "revelar()">revelacao</button>
+        <button onclick="validar()">APERTA</button>
+        <ul>
+            <li id = "L1">Deve ter pelo menos 8 caracteres</li>
+            <li id = "L2">Deve conter uma letra maiuscula</li>
+            <li id = "L3">Deve conter um número</li>
+            <li id = "L4">Deve conter pelo menos um caracter especial</li>
+        </ul>
+    </main>
+    <script>
+        function revelar(){
+            let input = document.getElementById("senha")
+
+            if(input.type == "password"){
+                input.type = "text"
+            } else{
+                input.type = "password"
+            }
+        }
+    </script>
+</body>
+</html>
